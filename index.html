@@ -4,22 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto Sapiencia</title>
-    <!-- Agrega enlaces a tus estilos CSS si es necesario -->
+
+    <style>
+        /* Estilos básicos para el menú */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Estilos para el menú desplegable */
+        nav li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Menú superior común -->
-<nav>
-    <ul>
-        <li><a href="#inicio">INICIO</a></li>
-        <li><a href="#el-centro">EL CENTRO</a></li>
-        <li><a href="#oferta-educativa">OFERTA EDUCATIVA</a></li>
-        <li><a href="#administracion">ADMINISTRACIÓN</a></li>
-        <li><a href="#orientacion">ORIENTACIÓN</a></li>
-        <li><a href="#aula-virtual">AULA VIRTUAL</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li class="dropdown">
+                <a href="#el-centro">EL CENTRO</a>
+                <div class="dropdown-content">
+                    <a href="#aulas">Aulas</a>
+                    <a href="#instalaciones">Instalaciones</a>
+                    <a href="#historia">Historia</a>
+                    <a href="#ubicacion">Ubicación</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#oferta-educativa">OFERTA EDUCATIVA</a>
+                <div class="dropdown-content">
+                    <a href="#eso">ESO</a>
+                    <a href="#bachillerato">Bachillerato</a>
+                    <a href="#artes">Artes</a>
+                    <a href="#ciencias-tecnologia">Ciencias y Tecnología</a>
+                    <a href="#general">General</a>
+                    <a href="#humanidades-ciencias-sociales">Humanidades y Ciencias Sociales</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#administracion">ADMINISTRACIÓN</a>
+                <div class="dropdown-content">
+                    <a href="#matriculas">Matrículas</a>
+                    <a href="#becas">Becas</a>
+                    <a href="#titulos">Títulos</a>
+                    <a href="#documentacion">Documentación</a>
+                    <a href="#personal">Personal</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#orientacion">ORIENTACIÓN</a>
+                <div class="dropdown-content">
+                    <a href="#departamentos">Departamentos</a>
+                    <a href="#continuar-estudiando">Continuar Estudiando</a>
+                    <a href="#salidas-profesionales">Salidas Profesionales</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#aula-virtual">AULA VIRTUAL</a>
+                <div class="dropdown-content">
+                    <a href="#login-plataforma-online">Login a Plataforma ONLINE</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#contacto">CONTACTO</a>
+                <div class="dropdown-content">
+                    <a href="#informacion-contacto">Información de Contacto</a>
+                    <a href="#formulario-contacto">Formulario de Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
 <!-- 1. INICIO -->
 <section id="inicio">
@@ -89,7 +189,90 @@
     </subsection>
 </section>
 
-<!-- Continuar con las secciones restantes (4. ADMINISTRACIÓN, 5. ORIENTACIÓN, 6. AULA VIRTUAL, 7. CONTACTO) -->
+<!-- 4. ADMINISTRACIÓN -->
+<section id="administracion">
+    <h2>ADMINISTRACIÓN</h2>
+    <!-- 4.1 Matriculas -->
+    <subsection id="matriculas">
+        <h3>Matrículas</h3>
+        <!-- Información sobre matrículas -->
+    </subsection>
+    <!-- 4.2 Becas -->
+    <subsection id="becas">
+        <h3>Becas</h3>
+        <!-- Información sobre becas -->
+    </subsection>
+    <!-- 4.3 Títulos -->
+    <subsection id="titulos">
+        <h3>Títulos</h3>
+        <!-- Información sobre títulos -->
+    </subsection>
+    <!-- 4.4 Documentación -->
+    <subsection id="documentacion">
+        <h3>Documentación</h3>
+        <!-- Información sobre documentación -->
+    </subsection>
+    <!-- 4.5 Personal -->
+    <subsection id="personal">
+        <h3>Personal</h3>
+        <!-- Información sobre el personal -->
+    </subsection>
+</section>
+
+<!-- 5. ORIENTACIÓN -->
+<section id="orientacion">
+    <h2>ORIENTACIÓN</h2>
+    <!-- 5.1 Departamentos -->
+    <subsection id="departamentos">
+        <h3>Departamentos</h3>
+        <!-- Información sobre departamentos -->
+    </subsection>
+    <!-- 5.2 Continuar estudiando -->
+    <subsection id="continuar-estudiando">
+        <h3>Continuar Estudiando</h3>
+        <!-- Información sobre continuar estudiando -->
+    </subsection>
+    <!-- 5.3 Salidas profesionales -->
+    <subsection id="salidas-profesionales">
+        <h3>Salidas Profesionales</h3>
+        <!-- Información sobre salidas profesionales -->
+    </subsection>
+</section>
+
+<!-- 6. AULA VIRTUAL -->
+<section id="aula-virtual">
+    <h2>AULA VIRTUAL</h2>
+    <!-- 6.1 Login a una Plataforma ONLINE -->
+    <subsection id="login-plataforma-online">
+        <h3>Login a una Plataforma ONLINE</h3>
+        <!-- Formulario de login -->
+        <form action="procesar_login.php" method="post">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </subsection>
+</section>
+
+<!-- 7. CONTACTO -->
+<section id="contacto">
+    <h2>CONTACTO</h2>
+    <!-- 7.1 Información de contacto -->
+    <subsection id="informacion-contacto">
+        <h3>Información de Contacto</h3>
+        <!-- Información de contacto -->
+    </subsection>
+    <!-- 7.2 Formulario de contacto -->
+    <subsection id="formulario-contacto">
+        <h3>Formulario de Contacto</h3>
+        <!-- Formulario de contacto -->
+        <form action="procesar_formulario_contacto.php" method="post">
+            <!-- Campos del formulario (nombre, correo, mensaje, etc.) -->
+        </form>
+    </subsection>
+</section>
 
 </body>
 </html>
