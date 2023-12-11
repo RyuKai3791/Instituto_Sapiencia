@@ -13,8 +13,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
     </style>
 </head>
-<body class="index">
-
+<body>
     <header>
         <img class="title" src="imgs/titulo-peq.jpg" alt="INSTITUTO SAPIENCIA">
     </header>
@@ -77,14 +76,21 @@
         </ul>
     </nav>
 
-<!-- 1. INICIO -->
-<section id="inicio">
-    <h1 id="welcome">Bienvenidos al Instituto Sapiencia</h1>
-    <div class="container">
-        <img id="img-welcome" src="imgs/escaleras-suarez.jpg" alt="Imagen de bienvenida">
-    </div>
-    <p class="centered"> <strong>"Nunca consideres el estudio como una obligación, sino como una oportunidad para penetrar en el bello y maravilloso mundo del saber." - Albert Einstein</strong></p>
+    <!-- 6. AULA VIRTUAL -->
+<section id="aula-virtual">
+    <h2>AULA VIRTUAL</h2>
+    <!-- 6.1 Login a una Plataforma ONLINE -->
+    <subsection id="login-plataforma-online">
+        <h3>Login a una Plataforma ONLINE</h3>
+        <!-- Formulario de login -->
+        <form action="procesar_login.php" method="post">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </subsection>
 </section>
-
 </body>
 </html>
