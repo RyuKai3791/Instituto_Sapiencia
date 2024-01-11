@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto Sapiencia</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="imgs/libro-verde.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/inicio-fondos-iconos/libro-verde.png" type="image/x-icon">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto:wght@300&display=swap');
@@ -14,9 +14,11 @@
     </style>
 </head>
 <body>
-    <header>
-        <img class="title" src="imgs/titulo-peq.jpg" alt="INSTITUTO SAPIENCIA">
-    </header>
+    <a href="index.html">
+        <header>
+            <img class="title" src="imgs/inicio-fondos-iconos/titulo-peq.jpg" alt="INSTITUTO SAPIENCIA">
+        </header>
+    </a>
     
     <nav>
         
@@ -25,67 +27,70 @@
             <li class="dropdown">
                 <a href="el-centro.html">EL CENTRO</a>
                 <div class="dropdown-content">
-                    <a href="#aulas">Aulas</a>
-                    <a href="#instalaciones">Instalaciones</a>
-                    <a href="#historia">Historia</a>
-                    <a href="#ubicacion">Ubicación</a>
+                    <a href="el-centro.html#aulas">Aulas</a>
+                    <a href="el-centro.html#instalaciones">Instalaciones</a>
+                    <a href="el-centro.html#historia">Historia</a>
+                    <a href="el-centro.html#ubicacion">Ubicación</a>
                 </div>
             </li>
             <li class="dropdown">
                 <a href="oferta-educativa.html">OFERTA EDUCATIVA</a>
                 <div class="dropdown-content">
-                    <a href="#eso">ESO</a>
-                    <a href="#bachillerato">Bachillerato</a>
-                    <a href="#artes">Artes</a>
-                    <a href="#ciencias-tecnologia">Ciencias y Tecnología</a>
-                    <a href="#general">General</a>
-                    <a href="#humanidades-ciencias-sociales">Humanidades y Ciencias Sociales</a>
+                    <a href="oferta-educativa.html#eso">ESO</a>
+                    <a href="oferta-educativa.html#bachillerato">Bachillerato</a>
+                    <a href="oferta-educativa.html#artes">Artes</a>
+                    <a href="oferta-educativa.html#ciencias-tecnologia">Ciencias y Tecnología</a>
+                    <a href="oferta-educativa.html#general">General</a>
+                    <a href="oferta-educativa.html#humanidades-ciencias-sociales">Humanidades y Ciencias Sociales</a>
                 </div>
             </li>
             <li class="dropdown">
                 <a href="administracion.html">ADMINISTRACIÓN</a>
                 <div class="dropdown-content">
-                    <a href="#matriculas">Matrículas</a>
-                    <a href="#becas">Becas</a>
-                    <a href="#titulos">Títulos</a>
-                    <a href="#documentacion">Documentación</a>
-                    <a href="#personal">Personal</a>
+                    <a href="administracion.html#matriculas">Matrículas</a>
+                    <a href="administracion.html#becas">Becas</a>
+                    <a href="administracion.html#titulos">Títulos</a>
+                    <a href="administracion.html#documentacion">Documentación</a>
+                    <a href="administracion.html#personal">Personal</a>
                 </div>
             </li>
             <li class="dropdown">
                 <a href="orientacion.html">ORIENTACIÓN</a>
                 <div class="dropdown-content">
-                    <a href="#departamentos">Departamentos</a>
-                    <a href="#continuar-estudiando">Continuar Estudiando</a>
-                    <a href="#salidas-profesionales">Salidas Profesionales</a>
+                    <a href="orientacion.html#departamentos">Departamentos</a>
+                    <a href="orientacion.html#continuar-estudiando">Continuar Estudiando</a>
+                    <a href="orientacion.html#salidas-profesionales">Salidas Profesionales</a>
                 </div>
             </li>
             <li class="dropdown">
                 <a href="aula-virtual.html">AULA VIRTUAL</a>
-                <div class="dropdown-content">
-                    <a href="#login-plataforma-online">Login a Plataforma ONLINE</a>
-                </div>
             </li>
             <li class="dropdown">
                 <a href="contacto.html">CONTACTO</a>
-                <div class="dropdown-content">
-                    <a href="#informacion-contacto">Información de Contacto</a>
-                    <a href="#formulario-contacto">Formulario de Contacto</a>
-                </div>
             </li>
         </ul>
     </nav>
-Haz lo mismo que anteriormente, sustituye los comentarios por lo que se solicita en ellos
     <!-- 7. CONTACTO -->
 <section id="contacto">
     <h2>CONTACTO</h2>
     <!-- 7.1 Información de contacto -->
     <subsection id="informacion-contacto">
         <h3>Información de Contacto</h3>
-        <!-- Información de contacto:
-        Telefonos (Secretaría, Dirección, Administración)
-        Correos Electronicos
-        Dirección -->
+        <p>Teléfonos:
+            <ul>
+                <li>Secretaría: 123-465-789</li>
+                <li>Dirección: 123-456-789</li>
+                <li>Administración: 123-456-789</li>
+            </ul>
+        </p>
+
+        <p>Correos Electrónicos:
+            <ul>
+                <li>Secretaría: <a href="mailto:secretaria@ejemplo.com">secretaria@ejemplo.com</a></li>
+                <li>Dirección: <a href="mailto:direccion@ejemplo.com">direccion@ejemplo.com</a></li>
+                <li>Administración: <a href="mailto:administracion@ejemplo.com">administracion@ejemplo.com</a></li>
+            </ul>
+        </p>
     </subsection>
     <!-- 7.2 Formulario de contacto -->
     <subsection id="formulario-contacto">
@@ -94,19 +99,30 @@ Haz lo mismo que anteriormente, sustituye los comentarios por lo que se solicita
         <form action="procesar_formulario_contacto.php" method="post">
             <!-- Crear un formulario con las siguientes caracteristicas:
             Campos del formulario (nombre, correo, comentario extra) -->
+            <!-- Sustituir con el código HTML del formulario -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="comentario">Comentarios:</label>
+            <textarea id="comentario" name="comentario"></textarea>
+
+            <button type="submit">Enviar</button>
         </form>
     </subsection>
 </section>
 
 <footer>
     <div class="footer-contact-info">
-        <h4>Información de contacto</h4>
-        <h5>Teléfono: 958-461-254</h5>
-        <h5>E-mail: secretariasapiencia@gmail.com</h5>
+        <h4>LLÁMANOS O ESCRÍBENOS</h4>
+        <h5>Teléfono: 123-456-789</h5>
+        <h5>Correo electrónico: <a href="mailto:secretaria@ejemplo.com">sapiencia@ejemplo.com</a></h5>
     </div>
 
     <div class="footer-mapa">
-        <h4>© COPYRIGHT 2023</h4>
+        <h4>© 2023 TODOS LOS DERECHOS RESERVADOS</h4>
     </div>
 </footer>
 </body>

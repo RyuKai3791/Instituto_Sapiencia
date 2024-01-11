@@ -15,17 +15,19 @@
 
 /* Estilo para las imágenes */
 .styled-image {
-    margin: 0.8%;
-    max-width: 50%;
+    margin: 0.85%;
+    max-width: 60%;
     height: auto;
-    border: 3px solid #2ECC71; /* Borde estiloso con color verde */
-    border-radius: 10px; /* Esquinas redondeadas */
+    border: 3px solid #2ECC71;
+    border-radius: 15px;
     transition: transform 0.35s ease-in-out;
 }
 
 /* Efecto al pasar el ratón por encima de las imágenes */
 .styled-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
+    box-shadow: 15px 15px 10px 10px #312b26;
+    -webkit-box-shadow: 0px 0px 4px 4px #01eeff;
 }
 
 /* Contenedor de imágenes con texto */
@@ -50,15 +52,21 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+/* A */
+a {
+    color: #01eeff;
+}
+
 /* BODY */
 body {
     background-color: #070707;
     color: #FFFFFF;
     text-align: center;
+    font-family: 'Roboto';
 }
 
 body.index {
-    background-image: url(imgs/letras.jpg);
+    background-image: url(imgs/inicio-fondos-iconos/letras.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,9 +80,48 @@ body.elcentro {
 body#elcentro section {
     text-align: center;
     box-sizing: border-box;
-    width: auto;
+    width: 59%;
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
+    background-color: #001F3F;
+    font-family: 'Roboto';
+}
+
+#index, #oferta-educativa, #administracion, #orientacion, #aula-virtual, #contacto {
+    text-align: center;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #FFFFFF;
+    background-color: #001F3F;
+    font-family: 'Roboto';
+    margin-bottom: 85px;
+}
+
+#administracion {
+    width: 48%;
+}
+
+#contacto {
+    width: 40%;
+}
+
+#orientacion {
+    width: 50%;
+}
+
+#aula-virtual {
+    width: 35%;
+}
+
+#history { 
+    text-align: justify;
+}
+
+#elcentrotext {
+    text-align: justify;
 }
 
 /* LOGO */
@@ -87,7 +134,7 @@ body#elcentro section {
 /* ESTILOS PARA EL MENÚ */
 header {
     text-align: center;
-    background-image: url(imgs/pizarra-borrada.jpg);
+    background-image: url(imgs/inicio-fondos-iconos/pizarra-borrada.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,7 +179,6 @@ nav a:hover {
 /* ESTILOS PARA EL MENÚ DESPLEGABLE */
 nav li.dropdown {
     display: inline-block;
-    
 }
 
 .dropdown-content {
@@ -163,10 +209,15 @@ nav li.dropdown {
 footer {
     background-color: #001F3F;
     color:#2ECC71;
+    font-family: 'Montserrat';
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:fixed;
+    bottom:0px;
+    width: 100%;
+    height: 3%;
 }
 
 .footer-contact-info {
@@ -207,12 +258,60 @@ footer {
     font-size: 200%;
 }
 
+/* EL CENTRO */
+#history {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#history p {
+    margin-bottom: 15px;
+}
+
+/* ADMINISTRACIÓN */
+#administracion {
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#administracion p {
+    margin-bottom: 15px;
+}
+
+/* ORIENTACIÓN */
+#orientacion {
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#orientacion p {
+    margin-bottom: 15px;
+}
+
+/* CONTACTO */
+#contacto {
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#contacto p {
+    margin-bottom: 15px;
+}
 
 /* AULA VIRTUAL */
 #aula-virtual {
-    background-color: #000000;
     color: #FFFFFF;
     padding: 20px;
+    font-family: 'Roboto'
 }
 
 #aula-virtual h2 {
@@ -222,7 +321,7 @@ footer {
 
 /* Formulario de login */
 #aula-virtual form {
-    max-width: 400px;
+    max-width: 250px;
     margin: 0 auto;
 }
 
@@ -254,9 +353,9 @@ footer {
 
 /* CONTACTO */
 #contacto {
-    background-color: #FFFFFF;
-    color: #001F3F;
+    color: #FFFFFF;
     padding: 20px;
+    font-family: 'Roboto'
 }
 
 #contacto h2 {
@@ -283,6 +382,7 @@ footer {
 #formulario-contacto h3 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    font-family: 'Roboto'
 }
 
 #formulario-contacto form {
@@ -295,8 +395,7 @@ footer {
     margin-bottom: 8px;
 }
 
-#formulario-contacto input,
-#formulario-contacto textarea {
+#formulario-contacto input, #formulario-contacto textarea {
     padding: 10px;
     margin-bottom: 16px;
     font-size: 1em;
@@ -309,13 +408,9 @@ footer {
 }
 
 #formulario-contacto input[type="submit"] {
-    background-color: #001F3F;
+    background-color: #2ECC71;
     color: #FFFFFF;
     cursor: pointer;
-    padding: 10px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
